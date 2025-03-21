@@ -22,13 +22,6 @@ With regards to the dataset, it is well organized and only requires slight prepr
 4. Time-based configuration: The column containing timestamps will be modified to the DateTime data type for better analysis of trends.
 5. Defining outliers: The amounts or distances of fraudulent transactions are unusual which suggests the need for further examination and analysis.
 
-With regards to the dataset, it is well organized and only requires slight preprocessing:
-1.Ê Ê Ê Evaluation of missing values: There are no significant missing values in the dataset since each column includes 50,000 entries.
-2.Ê Ê Ê Selection of features: Certain categorical features (for example, Merchant Category, Location) will need to be encoded for further visualizations.
-3.Ê Ê Ê Dealing with class imbalance: Only around 32% of transactions are fraudulent, which means fraud cases are significantly rarer than non-fraudulent ones.
-4.Ê Ê Ê Time-based configuration: The column containing timestamps will be modified to the DateTime data type for better analysis of trends,
-5.Ê Ê Ê Defining outliers: The amounts or distances of fraudulent transactions are unusual which suggests the need for further examination and analysis.
-
 Dataset: https://www.kaggle.com/datasets/samayashar/fraud-detection-transactions-dataset
 
 ## Problematic:
