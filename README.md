@@ -1,2 +1,49 @@
 # Data_Band
+
 Abdul Karim Mouakeh 393729
+
+
+
+
+
+Dataset:
+For this project, we decided on the Fraud Detection Transactions dataset from Kaggle. It has 50,000 labeled transactions, each labeled as fraudulent (1) or non-fraudulent (0). The dataset encompasses a wide range of different and important attributes such as:
+1.      Transaction Details: Transaction ID, User ID, Transaction Type (POS, ATM Withdrawal, Online),  and Transaction Amount.
+2.      Account and User Details: Account Balance, Card Type, Card Age, Authentication Type, and Device Type.
+3.      Fraud Risk Indicators: Prior Fraudulent Activity, IP Flag, Daily Transaction Volume, Risk Score.
+	4.      Contextual Information: Location Merchant Type, Timestamps, 	Distance of Transaction, and whether the transaction occurred on a 	Weekend
+
+With regards to the dataset, it is well organized and only requires slight preprocessing:
+1.      Evaluation of missing values: There are no significant missing values in the dataset since each column includes 50,000 entries.
+2.      Selection of features: Certain categorical features (for example, Merchant Category, Location) will need to be encoded for further visualizations.
+3.      Dealing with class imbalance: Only around 32% of transactions are fraudulent, which means fraud cases are significantly rarer than non-fraudulent ones.
+4.      Time-based configuration: The column containing timestamps will be modified to the DateTime data type for better analysis of trends,
+5.      Defining outliers: The amounts or distances of fraudulent transactions are unusual which suggests the need for further examination and analysis.
+
+Dataset: https://www.kaggle.com/datasets/samayashar/fraud-detection-transactions-dataset
+
+Problematic:
+Using this dataset, we aim to incorporate visualization techniques that help us in analyzing fraudulent transactions and pinpointing major risk determinants and trends. we will try to tackle the following questions:
+1.      Which types of transactions (POS, ATM withdrawals, online transfers) are most prone to fraud?
+2.       Do fraudulent transactions have lower or higher values compared to non-fraudulent transactions?
+3.      Does the fraud rate depend on time? (Time of the day, day of the week)
+4.      What is the correlation between risk score and probability of fraud?
+5.      Are there certain user behaviors (e.g. numerous failed transactions, high volume of daily transactions) that can be classified as indicators of fraud?
+Fraud is an ongoing financial security issue and it’s becoming more and more prominent. The impact that fraudulent transactions have on the financial industry is very significant. Therefore, understanding fraud patterns through the use of data visualization will provide new insights that traditional fraud detection techniques  (e.g., machine learning) lack. These new insights can contribute to the development of newer and more effective preventive strategies.
+Our target audience includes financial analysts, cybersecurity professionals, and the general public as raising awareness about how fraud might occur during transactions is important for prevention and better decision-making.
+
+Exploratory Data Analysis
+
+We started off by first loading the dataset containing all 50,000 entries and 21 features ( consisting of financial, temporal, behavioral, and categorical data). All the transactions are flagged as either fraudulent or legitimate (in the Fraud_Label column). This dataset has no missing values and consists of different data types like integers, floats, categorical variables, and timestamps.
+ 
+In this stage, we converted the Timestamp column to a datetime format to facilitate time series visualizations. Using both df.info() and df.describe(), we obtained key statistics like the mean, the min, the max, and the std. For example, we found the average transaction amount is approximately 99.4, while account balances average around 50,000, and a wide variance in multiple features.
+ 
+Analyzing the categorical data, it was apparent that POS and Online transactions are the most frequent transaction types, each accounting for around 25%. For the devices, Tablets were used in 33% of transactions, followed by Mobile and Laptop usage. The most common location for transactions was Tokyo then followed by Mumbai.
+ 
+We applied a correlation matrix that showed us the relationships between features. One of the significant findings was a moderate positive correlation (0.51) between Failed_Transaction_Count_7d and Fraud_Label, which indicates that users with more failed transactions in the past week are more likely to be linked with fraud. The Risk_Score also showed a moderate correlation of 0.38 with fraudulent activity. Other variables, such as Transaction_Amount and Transaction_Distance, displayed weak correlations with the fraud label, suggesting that fraudulent behavior is more behaviorally driven than purely financial. (All to be looked further into) 
+
+Note: This is a summarized version of our findings. The full EDA is available in the Notebook..
+ 
+
+
+
