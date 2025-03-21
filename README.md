@@ -52,6 +52,6 @@ This paper [Visualisation Tool to Support Fraud Detection](https://cdv.dei.uc.pt
 
 The ["yworks" website](https://www.yworks.com/pages/fraud-detection-through-visualization) focuses more on the transaction graph. Even if techniques they employs may either requires more data processing either adaptation to our dataset, a dynamic (bipartite) graph view of our transcation may enable finer data exploration. (In a dynamic fashion of [this kind](https://www.researchgate.net/figure/Bipartite-graphs-for-MNP-bacteria-interrelationships-at-a-class-and-b-phylum_fig2_282241955) of graph visualization.)
 
-Lastly, in this paper [ATOVis – A visualisation tool for the detection of financial fraud]([https://cambridge-intelligence.com/mobile-money-fraud/](https://journals.sagepub.com/doi/10.1177/14738716221098074?icid=int.sj-abstract.similar-articles.9)), the authors try also to make a tool to accelerate and ease the fraud detection. They seem to use same idea of cricular views but with a different approach for the pattern identification.
+Lastly, in this paper [ATOVis – A visualisation tool for the detection of financial fraud](https://journals.sagepub.com/doi/10.1177/14738716221098074?icid=int.sj-abstract.similar-articles.9), the authors try also to make a tool to accelerate and ease the fraud detection. They seem to use same idea of cricular views but with a different approach for the pattern identification.
 
 In this project, we will try to use and adapt these techniques to our dataset. 
