@@ -43,7 +43,7 @@ Using this dataset, we aim to incorporate visualization techniques that help us 
 
 Fraud is an ongoing financial security issue and it’s becoming more and more prominent. The impact that fraudulent transactions have on the financial industry is very significant. Therefore, understanding fraud patterns through the use of data visualization will provide new insights that traditional fraud detection techniques (e.g., machine learning) lack. These new insights can contribute to the development of newer and more effective preventive strategies.
 
-Our target audience includes financial analysts, cybersecurity professionals, and the general public as raising awareness about how fraud might occur during transactions is important for prevention and better decision-making.
+Our target audience includes financial analysts, cybersecurity professionals, and the general public as raising awareness about how fraud might occur during transactions is important for prevention and informed decision-making.
 
 ## Exploratory Data Analysis:
 
