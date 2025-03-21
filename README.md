@@ -53,6 +53,8 @@ We applied a correlation matrix that showed us the relationships between feature
 
 ## Related Work
 
-This paper [Visualisation Tool to Support Fraud Detection](https://cdv.dei.uc.pt/wp-content/uploads/2021/09/silva2021fraud.pdf) porposes different approaches to visualize fraud detection. Its main goal is to come up with a tool to allow human to check outputs of automatic fraud detection tools as it may be critical to not commit errors when racting to fraud. Heatmaps and shading matrices are used to display calendar view to identify activity patterns, circular views to underline periodicity in the data and finally a detailed view is proposed to compare transactions of interest atrribute by attribute.
+This paper [Visualisation Tool to Support Fraud Detection](https://cdv.dei.uc.pt/wp-content/uploads/2021/09/silva2021fraud.pdf) porposes different approaches to visualize fraud detection. Its main goal is to come up with a tool to allow humans to check outputs of automatic fraud detection tools as it may be critical to not commit errors when racting to fraud. Heatmaps and shading matrices are used to display calendar view to identify activity patterns, circular views to underline periodicity in the data and finally a detailed view is proposed to compare transactions of interest atrribute by attribute.
 
 The ["yworks" website](https://www.yworks.com/pages/fraud-detection-through-visualization) focuses more on the transaction graph. Even if techniques they employs may either requires more data processing either adaptation to our dataset, a dynamic (bipartite) graph view of our transcation may enable finer data exploration. (In a dynamic fashion of [this kind](https://www.researchgate.net/figure/Bipartite-graphs-for-MNP-bacteria-interrelationships-at-a-class-and-b-phylum_fig2_282241955) of graph visualization.)
+
+[https://cambridge-intelligence.com/mobile-money-fraud/](https://cambridge-intelligence.com/mobile-money-fraud/)
