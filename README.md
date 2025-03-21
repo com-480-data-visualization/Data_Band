@@ -52,3 +52,7 @@ We applied a correlation matrix that showed us the relationships between feature
 
 ## Related Work
 
+This paper [Visualisation Tool to Support Fraud Detection](https://cdv.dei.uc.pt/wp-content/uploads/2021/09/silva2021fraud.pdf) porposes different approaches to visualize fraud detection. Its main goal is to come up with a tool to allow human to check outputs of automatic fraud detection tools as it may be critical to not commit errors when racting to fraud. Heatmaps and shading matrices are used to display calendar view to identify activity patterns, circular views to underline periodicity in the data and finally a detailed view is proposed to compare transactions of interest atrribute by attribute.
+
+
+ 
