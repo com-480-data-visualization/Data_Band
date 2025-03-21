@@ -16,12 +16,7 @@ For this project, we decided on the Fraud Detection Transactions dataset from Ka
 3. Fraud Risk Indicators: Prior Fraudulent Activity, IP Flag, Daily Transaction Volume, Risk Score.
 4. Contextual Information: Location, Merchant Type, Timestamps, Distance of Transaction, and whether the transaction occurred on a Weekend.
 
-With regards to the dataset, it is well organized and only requires slight preprocessing:
-1. Evaluation of missing values: There are no significant missing values in the dataset since each column includes 50,000 entries.
-2. Selection of features: Certain categorical features (for example, Merchant Category, Location) will need to be encoded for further visualizations.
-3. Dealing with class imbalance: Only around 32% of transactions are fraudulent, which means fraud cases are significantly rarer than non-fraudulent ones.
-4. Time-based configuration: The column containing timestamps will be modified to the DateTime data type for better analysis of trends.
-5. Defining outliers: The amounts or distances of fraudulent transactions are unusual which suggests the need for further examination and analysis.
+With regards to the dataset, it is well organized and only requires slight preprocessing which we will address in the Exploratory Data Analysis section.
 
 Dataset: https://www.kaggle.com/datasets/samayashar/fraud-detection-transactions-dataset
 
@@ -57,4 +52,6 @@ This paper [Visualisation Tool to Support Fraud Detection](https://cdv.dei.uc.pt
 
 The ["yworks" website](https://www.yworks.com/pages/fraud-detection-through-visualization) focuses more on the transaction graph. Even if techniques they employs may either requires more data processing either adaptation to our dataset, a dynamic (bipartite) graph view of our transcation may enable finer data exploration. (In a dynamic fashion of [this kind](https://www.researchgate.net/figure/Bipartite-graphs-for-MNP-bacteria-interrelationships-at-a-class-and-b-phylum_fig2_282241955) of graph visualization.)
 
-[https://cambridge-intelligence.com/mobile-money-fraud/](https://cambridge-intelligence.com/mobile-money-fraud/)
+Lastly, in this paper [ATOVis – A visualisation tool for the detection of financial fraud]([https://cambridge-intelligence.com/mobile-money-fraud/](https://journals.sagepub.com/doi/10.1177/14738716221098074?icid=int.sj-abstract.similar-articles.9)), the authors try also to make a tool to accelerate and ease the fraud detection. They seem to use same idea of cricular views but with a different approach for the pattern identification.
+
+In this project, we will try to use and adapt these techniques to our dataset. 
