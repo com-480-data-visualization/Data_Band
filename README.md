@@ -54,4 +54,4 @@ The ["yworks" website](https://www.yworks.com/pages/fraud-detection-through-visu
 
 Lastly, in this paper [ATOVis – A visualisation tool for the detection of financial fraud](https://journals.sagepub.com/doi/10.1177/14738716221098074?icid=int.sj-abstract.similar-articles.9), the authors try also to make a tool to accelerate and ease the fraud detection. They seem to use same idea of cricular views but with a different approach for the pattern identification.
 
-In this project, we will try to use and adapt these techniques to our dataset. 
+In this project, we will try to use and adapt these techniques to our dataset, to focus on understanding fraud patterns early in the analysis pipeline using dashboards, and time series analysis to detect fraud trends and understanding specific behaviour behind these trends.
