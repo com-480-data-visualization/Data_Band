@@ -28,7 +28,8 @@ d3.csv("https://raw.githubusercontent.com/thetorf/files/main/test.csv").then(
             .text(d => d)
             .style("border", "1px solid #ccc")
             .style("padding", "8px")
-            .style("background-color", "#eee");
+            .style("background-color", "#3b3b3b")
+            .style("color", "#ffffff");
 
         data.forEach(row => {
             const tr = tbody.append("tr");
