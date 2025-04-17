@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fraud Time Series Visualization</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg-light">
+
+  <header class="bg-white shadow-sm py-5 mb-4">
+    <div class="container text-center">
+      <h1 class="display-4" style="font-family: 'Inter', sans-serif;">
+        Fraud Analytics Dashboard
+      </h1>
+      <p class="lead text-secondary">
+        Tracking fraudulent transactions over time
+      </p>
+    </div>
+  </header>
+
+  <main class="container mb-5">
+    <div class="card mb-5 shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title">Fraudulent Transactions Over Time</h2>
+        <div
+          id="fraud-time-chart"
+          class="w-100"
+          style="height: 400px;"
+        ></div>
+      </div>
+    </div>
+
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title">Fraud by Location</h2>
+        <div
+          id="fraud-map"
+          class="mb-3"
+          style="width: 100%; height: 500px;"
+        ></div>
+        <div class="d-flex flex-column align-items-center">
+          <input
+            type="range"
+            id="monthSlider"
+            class="form-range w-75"
+            min="0" max="0" value="0"
+          />
+          <small id="selectedMonth" class="text-secondary mt-2">
+            Month: —
+          </small>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
