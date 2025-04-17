@@ -27,26 +27,39 @@
 
         <div class="content-box">
             <div>
-                <h2>Visualization</h2>
-                <p>Description of the Visualization</p>
-                <svg></svg>
+                <h2 class="card-title">Fraudulent Transactions Over Time</h2>
+                <div id="fraud-time-chart" class="w-100" style="height: 400px;"></div>
+                
+                <h2 class="card-title">Fraud by Location</h2>
+                <div id="fraud-map" class="mb-3" style="width: 100%; height: 500px;"></div>
+                <div>
+                    <input type="range" id="monthSlider" class="form-range w-75" min="0" max="0" value="0"/>
+                    <small id="selectedMonth" class="text-secondary mt-2">
+                        Month: -
+                    </small>
+                </div>
             </div>
+
             <div>
-                <h2>Visualization</h2>
+                <h2>Choropleth Map</h2>
                 <p>Description of the Visualization</p>
                 <svg id="svg-vis-choropleth"></svg>
             </div>
+
             <div>
                 <h2>Visualization</h2>
                 <p>Description of the Visualization</p>
                 <svg></svg>
             </div>
+
             <div>
                 <h2>Visualization</h2>
                 <p>Description of the Visualization</p>
                 <svg></svg>
             </div>
         </div>
+        <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         <script type="module" src="visualization.js"></script>
     </body>
 </html>

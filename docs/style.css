@@ -97,6 +97,10 @@ nav {
     color: #ff811a;
 }
 
+#fraud-time-chart, #fraud-map {
+    border-radius: 0.5rem; 
+}
+
 /*
 Background: #fffdf9 (ivory white)
 
