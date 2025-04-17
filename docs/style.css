@@ -41,6 +41,27 @@ h1 {
     padding-bottom: 0.01rem;
 }
 
+div.content-box table {
+    border-collapse: collapse;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.content-box th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    background-color: #3b3b3b;
+    color: #ffffff;
+}
+
+div.content-box td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    background-color: #f3f4f6;
+}
+
+
 /*Nav bar*/
 nav {
     background-color: #546a9c;
