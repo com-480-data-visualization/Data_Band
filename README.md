@@ -60,6 +60,6 @@ Lastly, in this paper [ATOVis – A visualisation tool for the detection of fina
 In this project, we will try to use and adapt these techniques to our dataset, to focus on understanding fraud patterns early in the analysis pipeline using dashboards, and time series visualizations to detect fraud trends and understanding specific behaviour patterns behind these trends.
 
 
-# Milestone 2 (18th April, 5pm)
+# Milestone 2:
 
-# Milestone 3
+# Milestone 3:
