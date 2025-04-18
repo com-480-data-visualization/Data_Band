@@ -168,6 +168,10 @@ function choroplethMap(geoData, fraudData){
     const radius = d3.scaleSqrt()
         .domain(d3.extent(fraudPoints, d => d.amount))
         .range([5, 25]);
+
+    const color = d3.scaleSequential()
+        .domain(d3.extent(fraudPoints, d => d.amount))
+        .interpolator(d3.interpolateReds);
     
     svg.selectAll("circle")
         .data(fraudPoints)
@@ -176,8 +180,8 @@ function choroplethMap(geoData, fraudData){
         .attr("cx", d => projection([d.lon, d.lat])[0])
         .attr("cy", d => projection([d.lon, d.lat])[1])
         .attr("r", d => radius(d.amount))
-        .attr("fill", "red")
-        .attr("opacity", 0.6)
+        .attr("fill", d => color(d.amount))
+        .attr("opacity", 0.8)
         .attr("stroke", "#900");
 
 }
