@@ -12,8 +12,10 @@ Promise.all([
     d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
     d3.csv("https://raw.githubusercontent.com/thetorf/files/main/fraud_dataset.csv")
 ]).then(([geoData, fraudData]) => {
-    choroplethMap(geoData, fraudData)
     drawTS(fraudData)
+    console.log("Fraudulent transaction done...")
+    choroplethMap(geoData, fraudData)
+    console.log("Choropleth map done...")
 });
 
 function drawTS(fraudData){
@@ -59,16 +61,11 @@ function drawTS(fraudData){
                 hoverinfo: "x+y"
             }],
             {
-                title: {
-                    text: "Fraudulent Transactions Over Time",
-                    font: { size: 22 },
-                    xref: "paper", x: 0.05
-            },
-            xaxis: { title: "Date" },
-            yaxis: { title: "Number of Fraud Cases" },
-            margin: { t: 60, l: 60, r: 30, b: 60 },
-            plot_bgcolor: "#f9f9f9",
-            paper_bgcolor: "#fff"
+                xaxis: { title: "Date" },
+                yaxis: { title: "Number of Fraud Cases" },
+                margin: { t: 60, l: 60, r: 30, b: 60 },
+                plot_bgcolor: "#f9f9f9",
+                paper_bgcolor: "#fff"
             },
             { responsive: true }
         );
@@ -162,8 +159,6 @@ function choroplethMap(geoData, fraudData){
         }
     })
 
-    console.log(fraudByCity)
-
     const fraudPoints = Object.entries(fraudByCity).map(([city, amount]) => {
         return {
             city,
@@ -176,8 +171,6 @@ function choroplethMap(geoData, fraudData){
         .domain(d3.extent(fraudPoints, d => d.amount))
         .range([5, 25]);
     
-    console.log(fraudPoints)
-
     svg.selectAll("circle")
         .data(fraudPoints)
         .enter()
@@ -189,5 +182,4 @@ function choroplethMap(geoData, fraudData){
         .attr("opacity", 0.6)
         .attr("stroke", "#900");
 
-    console.log("Choropleth map done...")
 }
