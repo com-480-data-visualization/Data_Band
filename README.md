@@ -8,6 +8,7 @@ Jean-Daniel Rouveyrol 301480
 
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
+##Milestone 1
 ## Dataset:
 
 For this project, we decided on the Fraud Detection Transactions dataset from Kaggle. It has 50,000 labeled transactions, each labeled as fraudulent (1) or non-fraudulent (0). The dataset encompasses a wide range of different and important attributes such as:
@@ -59,3 +60,5 @@ In this project, we will try to use and adapt these techniques to our dataset, t
 
 
 # Milestone 2 (18th April, 5pm)
+
+# Milestone 3
