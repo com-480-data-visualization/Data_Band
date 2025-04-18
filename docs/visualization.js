@@ -134,8 +134,6 @@ function choroplethMap(geoData, fraudData){
     const width = 960, height = 600;
     const svg = d3.select('#svg-vis-choropleth')
     
-    console.log(fraudData)
-    
     svg.attr("width", width)
         .attr("height", height)
     
