@@ -46,6 +46,23 @@
                 <p>Description of the Visualization</p>
                 <svg id="svg-vis-choropleth"></svg>
             </div>
+
+            <div>
+                <h2>City Race</h2>
+                <p>Description of the Visualization</p>
+                <button id="city-race-restart-btn">Restart</button>
+                <label for="city-race-metric-select">Metric: </label>
+                <select id="city-race-metric-select">
+                    <option value="count" selected>Fraudulent Count</option>
+                    <option value="amount">Transaction Value Sum</option>
+                </select>
+                <label>
+                    <input type="checkbox" id="city-race-split-by-cardtype" />
+                    Split by Card Type
+                </label>                  
+
+                <svg id="svg-vis-city-race"></svg>
+            </div>
             
         </div>
         <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
