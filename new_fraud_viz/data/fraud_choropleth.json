@@ -1,0 +1,32 @@
+{
+  "London": {
+    "count": 6012,
+    "avg_risk": 0.5016,
+    "lat": 51.5072,
+    "lon": -0.1276
+  },
+  "Mumbai": {
+    "count": 6009,
+    "avg_risk": 0.5032,
+    "lat": 19.076,
+    "lon": 72.8777
+  },
+  "New York": {
+    "count": 5983,
+    "avg_risk": 0.4968,
+    "lat": 40.7128,
+    "lon": -74.006
+  },
+  "Sydney": {
+    "count": 6003,
+    "avg_risk": 0.5034,
+    "lat": -33.8688,
+    "lon": 151.2093
+  },
+  "Tokyo": {
+    "count": 6129,
+    "avg_risk": 0.5027,
+    "lat": 35.6895,
+    "lon": 139.6917
+  }
+}
