@@ -65,14 +65,12 @@ async function drawChoroplethMap() {
   const countExtent = d3.extent(Object.values(data), d => d.count);
   const radiusScale = d3.scaleSqrt()
     .domain(countExtent)
-    .range([4, 20]); // Adjust size range as needed
+    .range([4, 20]); 
 
-// 2. Animate circles using that scale
   circles.transition()
     .duration(800)
     .attr("r", d => radiusScale(d[1].count));
 
-  // Add zoom/pan support
   svg.call(
     d3.zoom()
       .scaleExtent([1, 8])
