@@ -44,6 +44,16 @@
             <div>
                 <h2>Choropleth Map</h2>
                 <p>Description of the Visualization</p>
+                <label for="attr-select">Group by:</label>
+                <select id="attr-select">
+                  <option value="None">None</option>
+                  <option value="Device_Type">Device_Type</option>
+                  <option value="Merchant_Category">Merchant_Category</option>
+                  <option value="Card_Type">Card_Type</option>
+                </select>
+              
+                <label for="value-select" id="value-label" style="display:none">Select value:</label>
+                <select id="value-select" style="display:none"></select>
                 <svg id="svg-vis-choropleth"></svg>
             </div>
 
@@ -59,8 +69,11 @@
                 <label>
                     <input type="checkbox" id="city-race-split-by-cardtype" />
                     Split by Card Type
-                </label>                  
-
+                </label>
+                <div style="display: flex; align-items: center; margin-top: 5px;">
+                    <label for="time-slider" style="margin-right: 10px;">Time:</label>
+                    <input type="range" id="time-slider" min="0" value="0" style="margin-top: 5px;" />
+                </div>
                 <svg id="svg-vis-city-race"></svg>
             </div>
             
