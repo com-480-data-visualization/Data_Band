@@ -24,7 +24,7 @@ function initSimilarityGraph(clusterBy = "Device_Type", showFraudOnly = false) {
 function drawSimilarityGraph(graph, clusterBy) {
   const width = window.innerWidth;
   const height = window.innerHeight;
-  const margin = 20;
+  const margin = 200;
 
   d3.select("#user-similarity-graph").html("");
   d3.select("#legend").html("");
