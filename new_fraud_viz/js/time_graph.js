@@ -1,4 +1,4 @@
-d3.tsv("data/data.csv")
+d3.csv("data/data.csv")
   .then(rows => {
     rows = rows.map(r => ({
       Timestamp: r["Timestamp"],
