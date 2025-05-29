@@ -134,8 +134,8 @@ html, body {
 
 #user-similarity-graph {
   width: 99%;
-  max-height: 80vh;
-  overflow: hidden;
+  max-height: 70vh;
+  overflow: auto;
 }
 
 #tooltip {
