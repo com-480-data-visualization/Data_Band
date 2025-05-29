@@ -96,21 +96,42 @@
       <div id="legend" style="padding:10px; color:white; font-family:sans-serif;"></div>
     </section>
 
-    <!-- Choropleth Map Section -->
-    <div id="choropleth-section" class="mt-5">
-      <h3 class="card-title" style="color:#1084a4; font-family: 'Orbitron', sans-serif; letter-spacing: 0.06em;">
-        Geographic Fraud Map
-      </h3>
+    <div>
+      <h2>Choropleth Map</h2>
+      <p>Description of the Visualization</p>
+      <label for="attr-select">Group by:</label>
+      <select id="attr-select" style="color: black;">
+        <option value="None" selected style="color: black;">None</option>
+        <option value="Device_Type" style="color: black;">Device_Type</option>
+        <option value="Merchant_Category" style="color: black;">Merchant_Category</option>
+        <option value="Card_Type" style="color: black;">Card_Type</option>
+      </select>
+    
+      <label for="value-select" id="value-label" style="display:none;">Select value:</label>
+      <select id="value-select" style="display:none; color: black;"></select>
+      <svg id="svg-vis-choropleth"></svg>
+    </div>
 
-      <p style="font-family: 'Orbitron', sans-serif; font-size: 1rem; color: #e0f0ff; margin-bottom: 1rem;">
-        <strong>Where is fraud most concentrated?</strong><br>
-        This choropleth map highlights the number of fraud cases in each city using circle size and color.
-        Hover over each bubble to see the fraud count and average risk score.
-      </p>
+    <div>
+      <h2>City Race</h2>
+      <p>Description of the Visualization</p>
+      <button id="city-race-restart-btn">Restart</button>
+      <label for="city-race-metric-select">Metric: </label>
+      <select id="city-race-metric-select" style="color: black;">
+        <option value="count" selected style="color: black;">Fraudulent Count</option>
+        <option value="amount" style="color: black;">Transaction Value Sum</option>
+      </select>
+      <label>
+        <input type="checkbox" id="city-race-split-by-cardtype" />
+        Split by Card Type
+      </label>
+      <div style="display: flex; align-items: center; margin-top: 5px;">
+        <label for="time-slider" style="margin-right: 10px;">Time:</label>
+        <input type="range" id="time-slider" min="0" value="0" style="margin-top: 5px;" />
+      </div>
+      <svg id="svg-vis-city-race"></svg>
+    </div>
 
-      <div id="choropleth-map"></div>
-      <div id="choropleth-legend" class="mt-3"></div>
-    </section>
   </main>
 
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -119,5 +140,6 @@
   <script src="js/similarity_graph.js"></script>
   <script src="js/choropleth_map.js"></script>
   <script src="js/region_bar.js"></script>
+  <script src="js/city_race.js"></script>
 </body>
 </html>
