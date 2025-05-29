@@ -133,9 +133,11 @@ html, body {
 }
 
 #user-similarity-graph {
-  width: 99%;
-  max-height: 70vh;
-  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 #tooltip {
