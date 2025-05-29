@@ -133,8 +133,8 @@ html, body {
 }
 
 #user-similarity-graph {
-  width: 100%;
-  height: 100vh;
+  width: 99%;
+  max-height: 80vh;
   overflow: hidden;
 }
 
