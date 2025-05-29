@@ -316,5 +316,9 @@ function drawCityRace(fraudData) {
         createLegend();
     }
 
+    d3.select("#svg-vis-city-race")
+        .selectAll("text")
+        .attr("fill", "#fff");
+
     startAutoUpdateSlider(); // Start the automatic slider update when the page loads
 }
