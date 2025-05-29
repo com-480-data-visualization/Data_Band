@@ -53,55 +53,14 @@
       </div>
     </div>
 
-    <!-- Similarity Graph Section -->
-    <section id="graph-section">
-      <div id="user-similarity-graph" style="width: 100%; height: 80vh;">
-
-        <h3 class="card-title" style="color:#1084a4; font-family: 'Orbitron', sans-serif; letter-spacing: 0.06em;">
-          User Similarity Graph
-        </h3>
-
-        <p style="font-family: 'Orbitron', sans-serif; font-size: 1rem; color: #e0f0ff; margin-bottom: 1rem;">
-          <strong>Are there hidden groups of users acting similarly?</strong><br>
-          This graph connects users based on behavioral similarity using cosine similarity over features like device type, location, and risk score. 
-          Densely connected clusters might reveal coordinated fraud or shared vulnerabilities. 
-          Use the filters to highlight risky users or group them by attributes such as authentication method or location.
-        </p>
-
-        <div class="d-flex flex-wrap align-items-center gap-4 mt-3 mb-4">
-          <div>
-            <label for="riskSlider" class="form-label">Minimum Risk Score:</label><br>
-            <input type="range" id="riskSlider" min="0" max="1" step="0.01" value="0">
-            <span id="riskValue">0.00</span>
-          </div>
-
-          <div>
-            <label for="groupBy" class="form-label">Cluster by:</label><br>
-            <select id="groupBy" class="form-select">
-              <option value="Device_Type">Device Type</option>
-              <option value="Location">Location</option>
-              <option value="Card_Type">Card Type</option>
-              <option value="Authentication_Method">Auth Method</option>
-            </select>
-          </div>
-
-          <div class="form-check mt-4">
-            <input class="form-check-input" type="checkbox" id="fraudOnlyToggle">
-            <label class="form-check-label" for="fraudOnlyToggle">
-              Show only fraudulent users
-            </label>
-          </div>
-        </div>
-
-        <div id="user-similarity-graph"></div>
-        <div id="tooltip" style="position:absolute; opacity:0;"></div>
-        <div id="legend" style="padding:10px; color:white; font-family:sans-serif;"></div>
-      </div>
-    </section>
 
     <div>
-      <h2>Choropleth Map</h2>
-      <p>Description of the Visualization</p>
+      <h2 class="card-title" style="color:#1084a4; font-family: 'Orbitron', sans-serif; letter-spacing: 0.06em;">Choropleth Map</h2>
+      <p style="font-family: 'Orbitron', sans-serif; font-size: 1rem; color: #e0f0ff; margin-bottom: 1rem;">
+        <strong>Where are the fraud hotspots?</strong><br>
+        This map visualizes the distribution of fraudulent transaction values across different regions. 
+        Use it to identify areas with high fraud activity given different prism and understand how fraud patterns vary geographically.
+      </p>
       <label for="attr-select">Group by:</label>
       <select id="attr-select" style="color: black;">
         <option value="None" selected style="color: black;">None</option>
@@ -115,9 +74,56 @@
       <svg id="svg-vis-choropleth"></svg>
     </div>
 
+    <!-- Similarity Graph Section -->
+    <section id="graph-section">
+      <h3 class="card-title" style="color:#1084a4; font-family: 'Orbitron', sans-serif; letter-spacing: 0.06em;">
+        User Similarity Graph
+      </h3>
+
+      <p style="font-family: 'Orbitron', sans-serif; font-size: 1rem; color: #e0f0ff; margin-bottom: 1rem;">
+        <strong>Are there hidden groups of users acting similarly?</strong><br>
+        This graph connects users based on behavioral similarity using cosine similarity over features like device type, location, and risk score. 
+        Densely connected clusters might reveal coordinated fraud or shared vulnerabilities. 
+        Use the filters to highlight risky users or group them by attributes such as authentication method or location.
+      </p>
+
+      <div class="d-flex flex-wrap align-items-center gap-4 mt-3 mb-4">
+        <div>
+          <label for="riskSlider" class="form-label">Minimum Risk Score:</label><br>
+          <input type="range" id="riskSlider" min="0" max="1" step="0.01" value="0">
+          <span id="riskValue">0.00</span>
+        </div>
+
+        <div>
+          <label for="groupBy" class="form-label">Cluster by:</label><br>
+          <select id="groupBy" class="form-select">
+            <option value="Device_Type">Device Type</option>
+            <option value="Location">Location</option>
+            <option value="Card_Type">Card Type</option>
+            <option value="Authentication_Method">Auth Method</option>
+          </select>
+        </div>
+
+        <div class="form-check mt-4">
+          <input class="form-check-input" type="checkbox" id="fraudOnlyToggle">
+          <label class="form-check-label" for="fraudOnlyToggle">
+            Show only fraudulent users
+          </label>
+        </div>
+      </div>
+
+      <div id="user-similarity-graph"></div>
+      <div id="tooltip" style="position:absolute; opacity:0;"></div>
+      <div id="legend" style="padding:10px; color:white; font-family:sans-serif;"></div>
+    </section>
+
     <div>
-      <h2>City Race</h2>
-      <p>Description of the Visualization</p>
+      <h2 class="card-title" style="color:#1084a4; font-family: 'Orbitron', sans-serif; letter-spacing: 0.06em;">City Race</h2>
+      <p style="font-family: 'Orbitron', sans-serif; font-size: 1rem; color: #e0f0ff; margin-bottom: 1rem;">
+        <strong>How do cities compare in fraud activity? Especially with respect to the different card types.</strong><br>
+        This interactive visualization allows you to compare fraudulent activity across cities over time.
+        Use the controls to select metrics, split by card type, and navigate through time.
+      </p>
       <button id="city-race-restart-btn">Restart</button>
       <label for="city-race-metric-select">Metric: </label>
       <select id="city-race-metric-select" style="color: black;">

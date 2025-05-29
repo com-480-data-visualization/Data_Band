@@ -43,7 +43,7 @@ function choroplethMap(geoData, fraudData) {
       .data(geoData.features)
       .join('path')
         .attr('d', path)
-        .attr('fill', '#eee')
+        .attr('fill', '#1084a4')
         .attr('stroke', '#999');
   
     const fraudByCityAndAttr = {};
