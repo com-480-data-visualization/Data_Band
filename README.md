@@ -68,7 +68,7 @@ Check out the uploaded document under the name Report.pdf, and for the website p
 
 https://com-480-data-visualization.github.io/Data_Band/new_fraud_viz/index.html
 
-Technical Setup:
+Technical Setup (final): (./new_fraud_viz/)
 
 	•	index.html — Main dashboard page
 	•	css/ — Styling
