@@ -73,6 +73,6 @@ Technical Setup (final): under the folder /new_fraud_viz
 	•	index.html — Main dashboard page
 	•	css/ — Styling
 	•	js/ — All D3 visualizations (time series, map, city race, network)
-	•	data/ — Cleaned dataset and processed files
+	•	data/ — Cleaned dataset and processed files (json files included)
 	•	assets/ —  logo used
 
