@@ -67,3 +67,12 @@ Check out the uploaded document under the name Report.pdf, and for the website p
 # Milestone 3:
 
 https://com-480-data-visualization.github.io/Data_Band/new_fraud_viz/index.html
+
+Technical Setup:
+
+	•	index.html — Main dashboard page
+	•	css/ — Styling
+	•	js/ — All D3 visualizations (time series, map, city race, network)
+	•	data/ — Cleaned dataset and processed files
+	•	assets/ —  logo used
+
