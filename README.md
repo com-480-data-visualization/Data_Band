@@ -65,3 +65,5 @@ In this project, we will try to use and adapt these techniques to our dataset, t
 Check out the uploaded document under the name Report.pdf, and for the website prototype (https://com-480-data-visualization.github.io/Data_Band/docs/index.html)
 
 # Milestone 3:
+
+https://com-480-data-visualization.github.io/Data_Band/new_fraud_viz/index.html
